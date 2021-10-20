@@ -1,7 +1,11 @@
 /* GENERAL/RESET */
 html {
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 15px;
+}
+
+body {
+    background: var(--very-light-gray);
 }
 
 *,
@@ -27,4 +31,125 @@ ul {
 img {
     max-width: 100%;
     height: auto;
+}
+
+a,
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* MAIN CONTENT */
+main {
+    width: 320px;
+    margin: 5em auto;
+}
+
+.cards {
+    height: 500px;
+    padding: 1em 3em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+}
+/* TOP CARD */
+.card-1 {
+    background: var(--bright-orange);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-1 h1 {
+    color: var(--very-light-gray);
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.5rem;
+}
+
+.card-1 p {
+    color: var(--transparent-white);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.card-1 button {
+    border: none;
+    border-radius: 50px;
+    background: var(--very-light-gray);
+    color: var(--bright-orange);
+    cursor: pointer;
+    font-family: "Lexend Deca", sans-serif;
+    padding: 0.8em 1.8em;
+}
+
+/* MIDDLE CARD */
+.card-2 {
+    background: var(--dark-cyan);
+}
+
+.card-2 h1 {
+    color: var(--very-light-gray);
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.5rem;
+}
+
+.card-2 p {
+    color: var(--transparent-white);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.card-2 button {
+    border: none;
+    border-radius: 50px;
+    background: var(--very-light-gray);
+    color: var(--dark-cyan);
+    cursor: pointer;
+    font-family: "Lexend Deca", sans-serif;
+    padding: 0.8em 1.8em;
+}
+
+/* BOTTOM CARD */
+.card-3 {
+    background: var(--very-dark-cyan);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-3 h1 {
+    color: var(--very-light-gray);
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.5rem;
+}
+
+.card-3 p {
+    color: var(--transparent-white);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.card-3 button {
+    border: none;
+    border-radius: 50px;
+    background: var(--very-light-gray);
+    color: var(--very-dark-cyan);
+    cursor: pointer;
+    font-family: "Lexend Deca", sans-serif;
+    padding: 0.8em 1.8em;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
 }

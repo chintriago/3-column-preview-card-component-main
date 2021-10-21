@@ -6,6 +6,7 @@ html {
 
 body {
     background: var(--very-light-gray);
+    overflow-x: hidden;
 }
 
 *,
@@ -151,5 +152,72 @@ main {
 
 /* FOOTER */
 footer {
+    width: 320px;
+    padding-bottom: 1em;
+    margin: auto;
     text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 768px) {
+    /* MAIN CONTENT */
+    main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .container-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 875px;
+    }
+
+    /* TOP CARD */
+    .card-1 {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+
+    .card-1 button {
+        margin-top: 40px;
+    }
+
+    .card-1 button:active {
+        background: var(--bright-orange);
+        border: 1px solid white;
+        color: white;
+    }
+
+    /* MIDDLE CARD */
+    .card-2 button {
+        margin-top: 40px;
+    }
+
+    .card-2 button:active {
+        background: var(--dark-cyan);
+        border: 1px solid white;
+        color: white;
+    }
+
+    /* BOTTOM CARD */
+    .card-3 {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .card-3 button {
+        margin-top: 40px;
+    }
+
+    .card-3 button:active {
+        background: var(--very-dark-cyan);
+        border: 1px solid white;
+        color: white;
+    }
 }

@@ -67,7 +67,7 @@ main {
     border-radius: 10px 10px 0 0;
 }
 
-.card-1 h2 {
+.card-1 h1 {
     color: var(--very-light-gray);
     font-family: "Big Shoulders Display", cursive;
     font-size: 2.5rem;
@@ -124,7 +124,7 @@ main {
     border-radius: 0 0 10px 10px;
 }
 
-.card-3 h2 {
+.card-3 h3 {
     color: var(--very-light-gray);
     font-family: "Big Shoulders Display", cursive;
     font-size: 2.5rem;

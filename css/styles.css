@@ -6,7 +6,6 @@ html {
 
 body {
     background: var(--very-light-gray);
-    overflow-x: hidden;
 }
 
 *,
@@ -65,14 +64,14 @@ main {
 /* TOP CARD */
 .card-1 {
     background: var(--bright-orange);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
-.card-1 h1 {
+.card-1 h2 {
     color: var(--very-light-gray);
     font-family: "Big Shoulders Display", cursive;
     font-size: 2.5rem;
+    text-transform: uppercase;
 }
 
 .card-1 p {
@@ -82,8 +81,7 @@ main {
     line-height: 1.6;
 }
 
-.card-1 button {
-    border: none;
+.card-1 a {
     border-radius: 50px;
     background: var(--very-light-gray);
     color: var(--bright-orange);
@@ -97,10 +95,11 @@ main {
     background: var(--dark-cyan);
 }
 
-.card-2 h1 {
+.card-2 h2 {
     color: var(--very-light-gray);
     font-family: "Big Shoulders Display", cursive;
     font-size: 2.5rem;
+    text-transform: uppercase;
 }
 
 .card-2 p {
@@ -110,8 +109,7 @@ main {
     line-height: 1.6;
 }
 
-.card-2 button {
-    border: none;
+.card-2 a {
     border-radius: 50px;
     background: var(--very-light-gray);
     color: var(--dark-cyan);
@@ -123,14 +121,14 @@ main {
 /* BOTTOM CARD */
 .card-3 {
     background: var(--very-dark-cyan);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 0 0 10px 10px;
 }
 
-.card-3 h1 {
+.card-3 h2 {
     color: var(--very-light-gray);
     font-family: "Big Shoulders Display", cursive;
     font-size: 2.5rem;
+    text-transform: uppercase;
 }
 
 .card-3 p {
@@ -140,8 +138,7 @@ main {
     line-height: 1.6;
 }
 
-.card-3 button {
-    border: none;
+.card-3 a {
     border-radius: 50px;
     background: var(--very-light-gray);
     color: var(--very-dark-cyan);
@@ -162,8 +159,8 @@ footer {
 @media only screen and (min-width: 768px) {
     /* MAIN CONTENT */
     main {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -180,28 +177,27 @@ footer {
 
     /* LEFT CARD */
     .card-1 {
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 10px;
+        border-radius: 10px 0 0 10px;
     }
 
-    .card-1 button {
+    .card-1 a {
         margin-top: 40px;
         border: 1px solid white;
     }
 
-    .card-1 button:hover {
+    .card-1 a:hover {
         background: var(--bright-orange);
         color: white;
         transition: all 0.2s;
     }
 
     /* MIDDLE CARD */
-    .card-2 button {
+    .card-2 a {
         margin-top: 40px;
         border: 1px solid white;
     }
 
-    .card-2 button:hover {
+    .card-2 a:hover {
         background: var(--dark-cyan);
         color: white;
         transition: all 0.2s;
@@ -209,17 +205,17 @@ footer {
 
     /* RIGHT CARD */
     .card-3 {
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 0;
+        border-radius: 0 10px 10px 0;
     }
 
-    .card-3 button {
+    .card-3 a {
         margin-top: 40px;
         border: 1px solid white;
     }
 
-    .card-3 button:hover {
+    .card-3 a:hover {
         background: var(--very-dark-cyan);
         color: white;
+        transition: all 0.2s;
     }
 }
